@@ -46,7 +46,7 @@ configuration.  Please see the respective websites for advantages / reasons.
     ```
 
   5. Update [Region.json](./src/configuration/Region.json) to match the region of your DynamoDB instance
-  6. Run 'npm install'
+  6. Run 'npm install --no-optional'
   7. Run 'npm run build'
   8. Verify this has created a 'dist.zip' file
   9. Optionally, run a local test by running 'npm run start'

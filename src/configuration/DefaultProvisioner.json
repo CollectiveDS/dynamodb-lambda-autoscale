@@ -1,59 +1,49 @@
 {
   "ReadCapacity": {
-    "Min": 1,
-    "Max": 100,
+    "Min": 10,
+    "Max": 3000,
     "Increment": {
       "When": {
-        "UtilisationIsAbovePercent": 75,
-        "ThrottledEventsPerMinuteIsAbove": 25
-      },
-      "By": {
-        "Units": 3,
-        "ProvisionedPercent": 30,
-        "ThrottledEventsWithMultiplier": 0.7
+        "UtilisationIsAbovePercent": 80,
+        "ThrottledEventsPerMinuteIsAbove": 2
       },
       "To": {
-        "ConsumedPercent": 130
+        "ConsumedPercent": 200
       }
     },
     "Decrement": {
       "When": {
-        "UtilisationIsBelowPercent": 30,
+        "UtilisationIsBelowPercent": 50,
         "AfterLastIncrementMinutes": 60,
         "AfterLastDecrementMinutes": 60,
         "UnitAdjustmentGreaterThan": 5
       },
       "To": {
-        "ConsumedPercent": 100
+        "ConsumedPercent": 120
       }
     }
   },
   "WriteCapacity": {
-    "Min": 1,
-    "Max": 100,
+    "Min": 10,
+    "Max": 3000,
     "Increment": {
       "When": {
-        "UtilisationIsAbovePercent": 75,
-        "ThrottledEventsPerMinuteIsAbove": 25
-      },
-      "By": {
-        "Units": 3,
-        "ProvisionedPercent": 30,
-        "ThrottledEventsWithMultiplier": 0.7
+        "UtilisationIsAbovePercent": 80,
+        "ThrottledEventsPerMinuteIsAbove": 2
       },
       "To": {
-        "ConsumedPercent": 130
+        "ConsumedPercent": 200
       }
     },
     "Decrement": {
       "When": {
-        "UtilisationIsBelowPercent": 30,
+        "UtilisationIsBelowPercent": 50,
         "AfterLastIncrementMinutes": 60,
         "AfterLastDecrementMinutes": 60,
         "UnitAdjustmentGreaterThan": 5
       },
       "To": {
-        "ConsumedPercent": 100
+        "ConsumedPercent": 120
       }
     }
   }
