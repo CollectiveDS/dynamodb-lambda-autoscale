@@ -4,17 +4,17 @@
     "Max": 3000,
     "Increment": {
       "When": {
-        "UtilisationIsAbovePercent": 80,
-        "ThrottledEventsPerMinuteIsAbove": 2
+        "UtilisationIsAbovePercent": 90,
+        "ThrottledEventsPerMinuteIsAbove": 10
       },
       "To": {
-        "ConsumedPercent": 200
+        "ConsumedPercent": 400
       }
     },
     "Decrement": {
       "When": {
         "UtilisationIsBelowPercent": 50,
-        "AfterLastIncrementMinutes": 60,
+        "AfterLastIncrementMinutes": 20,
         "AfterLastDecrementMinutes": 60,
         "UnitAdjustmentGreaterThan": 5
       },
@@ -28,17 +28,17 @@
     "Max": 3000,
     "Increment": {
       "When": {
-        "UtilisationIsAbovePercent": 80,
-        "ThrottledEventsPerMinuteIsAbove": 2
+        "UtilisationIsAbovePercent": 90,
+        "ThrottledEventsPerMinuteIsAbove": 10
       },
       "To": {
-        "ConsumedPercent": 200
+        "ConsumedPercent": 400
       }
     },
     "Decrement": {
       "When": {
         "UtilisationIsBelowPercent": 50,
-        "AfterLastIncrementMinutes": 60,
+        "AfterLastIncrementMinutes": 20,
         "AfterLastDecrementMinutes": 60,
         "UnitAdjustmentGreaterThan": 5
       },
